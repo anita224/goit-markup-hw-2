@@ -80,6 +80,7 @@ h1 {
   line-height: 30px;
   color: #ffffff;
   background: #2196f3;
+  border: none;
 }
 .hide {
   position: absolute;
