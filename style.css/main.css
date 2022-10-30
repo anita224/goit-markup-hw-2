@@ -23,6 +23,9 @@ a {
   text-decoration: none;
   list-style-type: none;
 }
+.link-current {
+  color: var(--hoover-color);
+}
 h2 {
   font-weight: 700;
   font-size: 36px;
