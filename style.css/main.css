@@ -1,17 +1,35 @@
+:root {
+  --brand-color: #000000;
+  --brand-color2: #ffffff;
+  --hoover-color: #2196f3;
+  --color-h3: #212121;
+  --background-color: #2f303a;
+  --color-description: #757575; /*описание*/
+  --color-bg-our-team:  #f5f4fa;
+  --font-family: inherit/*для кнопок*/
+
+  
+  
+  
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  font-style: normal;
+}
 li,
 a {
   text-decoration: none;
   list-style-type: none;
 }
 h2 {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1666;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--color-h3);
 }
 .span-logo {
   font-family: "Raleway";
@@ -20,7 +38,7 @@ h2 {
   font-size: 26px;
   line-height: 1, 1923;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--hoover-color);
 }
 .span-logo-2part {
   font-family: "Raleway";
@@ -29,17 +47,15 @@ h2 {
   font-size: 26px;
   line-height: 1, 1923;
   letter-spacing: 0.03em;
-  color: #000000;
+  color: var(--brand-color);
 }
 header a {
-  color: #000000;
+  color: var(--brand-color);
 }
 a:hover {
-  color: #2196f3;
+  color: var(--hoover-color);
 }
 .nav-list {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1, 1428;
@@ -48,7 +64,7 @@ a:hover {
 
 .nav-contact {
   list-style: none;
-  color: #000000;
+  color: var(--brand-color);
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -59,27 +75,24 @@ a:hover {
 
 /*главный экран*/
 .hero {
-  background-color: #2f303a;
+  background-color: var(--background-color);
 }
 h1 {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1, 3636;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--brand-color2);
 }
 .btn-hero {
-  font-family: "Roboto";
-  font-style: normal;
+  font-family: var(--font-family);
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  color: #ffffff;
-  background: #2196f3;
+  color: var(--brand-color2);
+  background: var(--hoover-color);
   border: none;
 }
 .hide {
@@ -95,52 +108,46 @@ h1 {
   margin: -1px;
 }
 .advantage-tittle {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1, 1428;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
-  color: #212121;
+  color: var(--color-h3);
 }
 .advantage-p {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1, 7142;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--color-description);
 }
 
 .our-team {
+  background-color: var(--color-bg-our-team);
 }
 .team-list {
-}
-.team {
+  background-color: var(--brand-color2);
+  width: 270px; /* я не знаю, правильно ли писать ширину и высоту в данном случае,
+   возможно нужно оставить без этого и потом как=то править*/
+  height: 368px;
 }
 .team-name {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1, 1875;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--color-h3);
 }
 .team-speciality {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1, 1875;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--color-description);
 }
 footer {
-  background-color: #2f303a;
+  background-color: var(--background-color);
 }
 .span-logo2parr-footer {
   font-family: "Raleway";
@@ -149,25 +156,57 @@ footer {
   font-size: 26px;
   line-height: 1, 1923;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--brand-color2);
 }
-.footer-contact {
-}
+
 .footer-adress {
-  font-family: "Roboto";
-  font-style: normal;
+  font-family: 'Roboto';
+font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1, 7142;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--brand-color2);
 }
-.footer-contacts {
+.footer-contact {
   font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
-font-size: 14px;
-line-height: 1, 7142;
-letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1, 7142;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Портфолио страница*/
+
+/* кнопки-переключатели*/
+.row-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1, 625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-h3);
+  border: none;
+}
+.row-btn:hover {
+  color: var(--brand-color2);
+  background-color: var(--hoover-color);
+}
+
+/* портфолио*/
+.portfolio-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2, 00;
+  letter-spacing: 0.06em;
+  color: var(--color-h3);
+}
+.portfolio-list {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1, 875;
+  letter-spacing: 0.03em;
+  color: var(--color-description);
 }
