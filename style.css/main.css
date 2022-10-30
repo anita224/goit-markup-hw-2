@@ -26,14 +26,7 @@ a {
 .link-current {
   color: var(--hoover-color);
 }
-h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--color-h3);
-}
+
 .span-logo {
   font-family: "Raleway";
   font-style: normal;
@@ -77,6 +70,7 @@ a:focus {
   letter-spacing: 0.02em;
 }
 
+
 /*главный экран*/
 .hero {
   background-color: var(--background-color);
@@ -99,6 +93,7 @@ h1 {
   background: var(--hoover-color);
   border: none;
 }
+
 .hide {
   position: absolute;
   white-space: nowrap;
