@@ -171,7 +171,8 @@ address {
   letter-spacing: 0.03em;
   color: var(--brand-color2);
 }
-.footer-adress:hover {
+.footer-adress:hover 
+.footer-adress:focus {
   color: var(--hoover-color);
 }
 .footer-contact {
@@ -181,7 +182,8 @@ address {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-contact:hover {
+.footer-contact:hover
+.footer-contact:focus {
   color: var(--hoover-color);
 }
 /* Портфолио страница*/
@@ -198,7 +200,8 @@ address {
   color: var(--color-h3);
   border: none;
 }
-.row-btn:hover {
+.row-btn:hover
+.row-btn:focus {
   color: var(--brand-color2);
   background-color: var(--hoover-color);
 }
