@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before *::after {
+  box-sizing: inherit;
+}
 :root {
   --brand-color: #000000;
   --brand-color2: #ffffff;
@@ -7,6 +14,8 @@
   --color-description: #757575; /*описание*/
   --color-bg-our-team: #f5f4fa; /*вторичный цвет фона*/
   --font-family: inherit; /*для кнопок*/
+  --border-color: #ECECEC;
+  --border-color-img: #EEEEEE;
 }
 body {
   margin: 0;
@@ -14,15 +23,33 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: var(--brand-color2);
 }
+/*сбрасываем*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 li,
 a {
   text-decoration: none;
   list-style-type: none;
 }
-.link-current {
-  color: var(--hoover-color);
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
+header .container {
+  display: flex;
+}
 .span-logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
@@ -39,22 +66,48 @@ a {
   letter-spacing: 0.03em;
   color: var(--brand-color);
 }
-.main-link {
+.main-nav {
+  display: flex;
+}
+.main-nav2 {
+  display: flex; /*ставит все в ряд*/
+  align-items: center; /*выравнивает по середину строки элементы*/
+}
+.nav-link {
   color: var(--brand-color);
 }
-
-
+.link-current {
+  color: var(--hoover-color);
+}
 .nav-list {
+  display: flex;
+
+  gap: 50px;
+  margin: 0;
+  margin-left: 93px;
+  padding-left: 0;
+  padding-bottom: 32px;
+  padding-top: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1428;
   letter-spacing: 0.02em;
 }
-.main-link:hover {
+.nav-li {
+}
+/*.nav-list .nav-li:last-child {
+  margin-right: 0;
+}*/
+
+.nav-link:hover {
   color: var(--hoover-color);
 }
 
 .nav-contact {
+  display: flex;
+  padding-left: 290px;
+
   list-style: none;
   color: var(--brand-color);
   font-family: "Roboto";
@@ -64,6 +117,12 @@ a {
   line-height: 1.1428;
   letter-spacing: 0.02em;
 }
+.nav-contact-li {
+}
+.nav-contact-li:not(:last-child) {
+  margin-right: 50px;
+}
+
 .contact-list {
   color: var(--color-description);
 }
@@ -73,9 +132,15 @@ a {
 
 /*главный экран*/
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--background-color);
 }
+
+/*заголовок главный*/
 .hero-tittle {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.3636;
@@ -84,7 +149,15 @@ a {
   text-transform: uppercase;
   color: var(--brand-color2);
 }
+
+/*кнопка на гл.экране*/
 .btn-hero {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+
+  padding: 10px 32px;
+
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
@@ -93,8 +166,27 @@ a {
   color: var(--brand-color2);
   background: var(--hoover-color);
   border: none;
+  border-radius: 4px;
+}
+.btn-hero a {
+  color: #ffffff;
 }
 
+/*преимущества список 2-ой блок, шапку не считаю**/
+.advantage {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.advantage-list {
+  display: flex;
+  gap: 30px;
+  padding-left: 0;
+}
+.advantage-list-li {
+  width: 270px;
+}
+
+/*Переваги в css спрячем h2*/
 .hide {
   position: absolute;
   white-space: nowrap;
@@ -107,6 +199,8 @@ a {
   clip-path: inset(50%);
   margin: -1px;
 }
+
+/*список преимуществ, 2-ой блок, шапку не считаю*/
 .advantage-tittle {
   font-size: 14px;
   line-height: 1.1428;
@@ -121,8 +215,9 @@ a {
   color: var(--color-description);
 }
 
-.our-team {
-  background-color: var(--color-bg-our-team);
+/*Чим ми займаємося*/
+.work {
+  margin-bottom: 94px;
 }
 .tittle {
   /*h2*/
@@ -130,10 +225,31 @@ a {
   line-height: 42px;
   letter-spacing: 0.03em;
   color: var(--color-h2);
+  text-align: center;
+  margin-bottom: 50px;
 }
+.work-list {
+  display: flex;
+  gap: 30px;
+  padding-left: 0;
+  padding-top: 0;
+}
+
+/*Наша команда*/
+.our-team {
+  background-color: var(--color-bg-our-team);
+  padding-bottom: 94px;
+  padding-top: 94px;
+  }
 .team-list {
   background-color: var(--brand-color2);
 
+}
+
+.team {
+  display: flex;
+  gap: 30px;
+  padding-left: 0;
 }
 .team-name {
   font-weight: 500;
@@ -141,16 +257,30 @@ a {
   line-height: 1.1875;
   letter-spacing: 0.03em;
   color: var(--color-h3);
+ 
 }
 .team-speciality {
   font-size: 16px;
   line-height: 1.1875;
   letter-spacing: 0.03em;
   color: var(--color-description);
+  margin-top: 10px;
+  
+}
+.team-img-text{
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+ 
 }
 footer {
   background-color: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  
 }
+
 .span-logo2parr-footer {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -159,20 +289,20 @@ footer {
   line-height: 1.1923;
   letter-spacing: 0.03em;
   color: var(--brand-color2);
- 
 }
 address {
   font-style: normal;
+  
+  
 }
 .footer-adress {
-
   font-size: 14px;
   line-height: 1.7142;
   letter-spacing: 0.03em;
   color: var(--brand-color2);
+ 
 }
-.footer-adress:hover 
-.footer-adress:focus {
+.footer-adress:hover .footer-adress:focus {
   color: var(--hoover-color);
 }
 .footer-contact {
@@ -181,9 +311,9 @@ address {
   line-height: 1.7142;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  padding-left: 0;
 }
-.footer-contact:hover
-.footer-contact:focus {
+.footer-contact:hover .footer-contact:focus {
   color: var(--hoover-color);
 }
 /* Портфолио страница*/
@@ -200,29 +330,84 @@ address {
   color: var(--color-h3);
   border: none;
 }
-.row-btn:hover
-.row-btn:focus {
+.row-btn:hover .row-btn:focus {
   color: var(--brand-color2);
   background-color: var(--hoover-color);
 }
 
 /* портфолио*/
+.border {
+  border-bottom: 1px solid var(--border-color);/*линия под навигацией*/
+}
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  
+ 
+}
+
+.portfolio-tabs{
+  padding-left: 0;
+  display: flex;
+ justify-content: center;
+ gap: 8px;
+ margin-bottom: 50px;
+}
+
+.row-btn{
+  background-color: var(--color-bg-our-team);
+padding: 6px 22px;
+border-radius: 4px;
+}
+.row-btn:hover,
+.row-btn:focus{
+  background-color: var(--hoover-color);
+  color: var(--brand-color2);
+}
+
 .portfolio-name {
- font-size: 18px;
+  font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--color-h2);
+
+  padding-top: 0px;
+  padding-left: 24px;
+  
+ 
+}
+.portfolio-p{
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: var(--color-description);
+  padding-left: 24px;
+
 }
 .portfolio-list {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--color-description);
+  
+  display: flex;
+  flex-wrap: wrap;/*перенос на другую строку*/
+  justify-content: space-between;
+  padding-left: 0;
+  
+ 
+  
+}
+/*! я не знаю как убрать у последней строки margin, чтоб у секции поставить padding 94px*/
+.portfolio-li {
+  border: 1px solid var(--border-color-img);
+  margin-bottom: 30px;
+ 
 }
 .portfolio-link {
   font-size: 18px;
-line-height: 36px;
-letter-spacing: 0.06em;
+  line-height: 36px;
+  letter-spacing: 0.06em;
 
-color: var(--color-h2)
+  color: var(--color-h2);
+
 }
