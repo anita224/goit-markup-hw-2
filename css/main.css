@@ -7,7 +7,7 @@ html {
     box-sizing: inherit;
 }
 
- :root {
+:root {
     --brand-color: #000000;
     --brand-color2: #ffffff;
     --hoover-color: #2196f3;
@@ -21,6 +21,10 @@ html {
     /*для кнопок*/
     --border-color: #ececec;
     --border-color-img: #eeeeee;
+    --color-icon: #afb1b8;
+    --color-bg-icon: #fff;
+    --color-icon-bg-hover: #2196f3;
+    --color-icon-hover: #fff;
 }
 
 body {
@@ -56,10 +60,10 @@ a {
 }
 
 .container {
-    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+    width: 1200px;
 }
 
 img {
@@ -70,6 +74,7 @@ img {
 
 header .container {
     display: flex;
+    justify-content: center;
 }
 
 .span-logo {
@@ -95,8 +100,6 @@ header .container {
     /*ставит все в ряд*/
     align-items: center;
     /*выравнивает по середину строки элементы*/
-    padding-bottom: 32px;
-    padding-top: 32px;
 }
 
 .nav-link {
@@ -132,7 +135,7 @@ header .container {
 
 .nav-contact {
     display: flex;
-    padding-left: 290px;
+    margin-left: 302px;
     list-style: none;
     color: var(--brand-color);
     font-family: "Roboto";
@@ -143,10 +146,8 @@ header .container {
     letter-spacing: 0.02em;
 }
 
-.nav-contact-li {}
-
 .nav-contact-li:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 30px;
 }
 
 .contact-list {
@@ -154,10 +155,21 @@ header .container {
     padding-bottom: 32px;
     padding-top: 32px;
     padding-top: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon {
+    margin-right: 10px;
+    fill: var(--color-description);
 }
 
 .contact-list:hover {
     color: var(--hoover-color);
+}
+
+.contact-list:hover .nav-icon {
+    fill: var(--color-icon-bg-hover);
 }
 
 
@@ -217,12 +229,23 @@ header .container {
 
 .advantage-list {
     display: flex;
+    justify-content: center;
     gap: 30px;
-    padding-left: 0;
+    align-items: center;
 }
 
 .advantage-list-li {
     width: 270px;
+    height: 120px;
+}
+
+.wrap-icon {
+    background-color: #f5f4fa;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 4px;
 }
 
 
@@ -250,6 +273,11 @@ header .container {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-h2);
+    margin-top: 30px;
+}
+
+.advantage-link {
+    margin-left: 100px;
 }
 
 .advantage-p {
@@ -264,6 +292,7 @@ header .container {
 
 .work {
     padding-bottom: 94px;
+    padding-top: 94px;
 }
 
 .tittle {
@@ -287,13 +316,15 @@ header .container {
 /*Наша команда*/
 
 .our-team {
-    background-color: var(--color-bg-our-team);
-    padding-bottom: 94px;
     padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--color-bg-our-team);
 }
 
 .team-list {
     background-color: var(--brand-color2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team {
@@ -304,7 +335,6 @@ header .container {
 
 .team-link {
     display: block;
-    background-color: tomato;
 }
 
 .team-name {
@@ -338,7 +368,22 @@ header .container {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: tomato;
+    background-color: var(--color-bg-icon);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-link:hover {
+    background-color: var(--color-icon-bg-hover);
+}
+
+.team-link:hover .team-icon
+/*.team-link:hover .team-icon обозначает обратись к ссылке 
+при ховере а в ней ее ребенку иконке и таким образом как триггерная анимация*/
+
+{
+    fill: var(--color-icon-hover);
 }
 
 .team-social-li {
@@ -354,6 +399,61 @@ header .container {
     gap: 10px;
     align-items: center;
 }
+
+.team-icon {
+    fill: var(--color-icon);
+    /*так обозначаетмя цвет для свг иконки -fill*/
+}
+
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-tittle {
+    font-family: "Roboto" serif;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.clients-ul {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.clients-li {
+    gap: 16px 32px;
+}
+
+.client-icon-svg {
+    padding-top: 16px;
+    padding-right: 32px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    fill: #afb1b8;
+}
+
+.client-link .client-icon-svg {
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid #afb1b8;
+}
+
+.client-link .client-icon-svg:hover {
+    border-color: #2196f3;
+    fill: #2196f3;
+}
+
+.client-link .client-icon-svg:focus {
+    border-color: #2196f3;
+    fill: #2196f3;
+}
+
+
+/*-----------------------FOOTER-------------------------*/
 
 footer {
     background-color: var(--background-color);
@@ -402,6 +502,64 @@ footer li {
 
 .footer-contact:hover {
     color: var(--hoover-color);
+}
+
+footer p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.footer-svg {
+    fill: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    background: var(--color-icon-bg-hover);
+}
+
+.footer-icon-li {
+    width: 44px;
+    height: 44px;
+}
+
+.footer-link-ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+footer .container {
+    display: flex;
+    align-items: baseline;
+}
+
+.social-footer {
+    background-color: rgb(132, 251, 251);
+}
+
+.addres {
+    background-color: gold;
 }
 
 
@@ -486,9 +644,6 @@ footer li {
     justify-content: space-between;
     padding-left: 0;
 }
-
-
-/*! я не знаю как убрать у последней строки margin, чтоб у секции поставить padding 94px*/
 
 .portfolio-content {
     border-bottom: 1px solid var(--border-color-img);
