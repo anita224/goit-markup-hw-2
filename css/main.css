@@ -586,6 +586,15 @@
                 color: var(--brand-color2);
             }
             
+            .portfolio-link {
+                display: block;
+            }
+            
+            .portfolio-link:hover {
+                box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%), 1px 4px 6px rgb(0 0 0 / 16%);
+                background: #FFFFFF;
+            }
+            
             .portfolio-name {
                 font-size: 18px;
                 line-height: 2;
@@ -621,14 +630,4 @@
                 margin-top: 0;
             }
             
-            .portfolio-link {
-                font-size: 18px;
-                line-height: 36px;
-                letter-spacing: 0.06em;
-                color: var(--color-h2);
-            }
-            
-            .portfolio-li:hover .portfolio-li:focus {
-                background: #FFFFFF;
-                box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-            }
+            .portfolio-link {}
