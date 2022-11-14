@@ -174,6 +174,8 @@
                 padding-top: 200px;
                 padding-bottom: 200px;
                 background-color: var(--background-color);
+                max-width: 1600px;
+                height: 600px;
             }
             /*заголовок главный*/
             
@@ -215,6 +217,8 @@
                 padding-bottom: 94px;
             }
             
+            .advantage-icon {}
+            
             .advantage-list {
                 display: flex;
                 justify-content: center;
@@ -229,11 +233,12 @@
             
             .wrap-icon {
                 background-color: #f5f4fa;
-                padding-top: 25px;
-                padding-bottom: 25px;
-                padding-left: 100px;
-                padding-right: 100px;
                 border-radius: 4px;
+                width: 270px;
+                height: 120px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
             /*Переваги в css спрячем h2*/
             
@@ -405,31 +410,42 @@
             
             .clients-li {
                 gap: 16px 32px;
+                width: 170px;
+                height: 92px;
             }
             
             .client-icon-svg {
+                width: 106px;
+                height: 60px;
+                fill: #afb1b8;
+            }
+            
+            .client-link:hover .client-icon-svg {
+                border-color: #2196f3;
+                fill: #2196f3;
+            }
+            
+            .client-link:hover {
+                border-color: #2196f3;
+            }
+            
+            .client-link:focus {
+                border-color: #2196f3;
+                fill: #2196f3;
+            }
+            
+            .client-link {
+                width: 100%;
+                height: 100%;
                 padding-top: 16px;
                 padding-right: 32px;
                 padding-bottom: 16px;
                 padding-left: 32px;
-                fill: #afb1b8;
-            }
-            
-            .client-link .client-icon-svg {
-                width: 170px;
-                height: 92px;
                 border-radius: 4px;
                 border: 1px solid #afb1b8;
-            }
-            
-            .client-link .client-icon-svg:hover {
-                border-color: #2196f3;
-                fill: #2196f3;
-            }
-            
-            .client-link .client-icon-svg:focus {
-                border-color: #2196f3;
-                fill: #2196f3;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
             /*-----------------------FOOTER-------------------------*/
             
@@ -527,12 +543,11 @@
             
             .footer-container {
                 display: flex;
+                align-items: baseline;
             }
             
             .footer-social {
                 margin-left: 70px;
-                align-items: baseline;
-                margin-top: 19px;
             }
             /*-----------------------Портфолио страница-------------------------*/
             /* кнопки-переключатели*/
@@ -547,9 +562,11 @@
                 letter-spacing: 0.03em;
                 color: var(--color-h3);
                 border: none;
+                display: block;
             }
             
             .row-btn:hover .row-btn:focus {
+                box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
                 color: var(--brand-color2);
                 background-color: var(--hoover-color);
             }
