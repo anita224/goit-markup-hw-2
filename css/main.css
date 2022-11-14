@@ -563,7 +563,7 @@ footer .container {
 }
 
 
-/* Портфолио страница*/
+/*-----------------------Портфолио страница-------------------------*/
 
 
 /* кнопки-переключатели*/
@@ -659,4 +659,11 @@ footer .container {
     line-height: 36px;
     letter-spacing: 0.06em;
     color: var(--color-h2);
+}
+
+.portfolio-li {}
+
+.portfolio-li:hover {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
