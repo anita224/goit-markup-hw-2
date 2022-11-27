@@ -449,11 +449,8 @@
 
                                     <div class="wrap-label">
 
-                                        <input type="email" class="input-form" name="email" id="e-mail">
-                                        <label for="e-mail" class="label-form">
-                                            E-mail
-    
-                                        </label>
+                                        <input type="email" class="input-form" name="email" id="e-mail" placeholder="E-mail">
+
                                     </div>
                                 </form>
 
@@ -484,27 +481,37 @@
                         </svg></button>
 
 
-                    <h1>Залиште свої дані, ми вам передзвонимо</h1>
+                    <h1 class="modal-h1">Залиште свої дані, ми вам передзвонимо</h1>
 
                     <div class="wrap-modal">
                         <form>
-                            <label for="name">Ім'я</label>
-                            <input type="text" name="name" id="name">
+                            <div class="form-group">
+                                <label for="name">Ім'я</label>
+                                <input type="text" name="name" id="name">
+                            </div>
 
-                            <label for="phone">Телефон</label>
-                            <input type="tel" name="phone_number" id="phone">
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" name="phone_number" id="phone">
+                            </div>
 
-                            <label for="e-mail">Пошта</label>
-                            <input type="email" name="email" id="e-mail">
+                            <div class="form-group">
+                                <label for="e-mail">Пошта</label>
+                                <input type="email" name="email" id="e-mail">
+                            </div>
 
 
-                            <label for="e-mail">Коментар</label>
-                            <textarea name="comment" rows="5" placeholder="Введіть текст"></textarea>
+                            <div class="form-group">
+                                <label for="e-mail">Коментар</label>
+                                <textarea name="comment" rows="5" placeholder="Введіть текст"></textarea>
+                            </div>
+
 
                             <label>
                         <input type="checkbox" name="terms" value="terms" checked />
                         Погоджуюся з розсилкою та приймаю  <span>Умови договору</span>
                       </label>
+
 
                             <button type="submit">Відправити</button>
                         </form>
