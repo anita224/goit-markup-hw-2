@@ -438,6 +438,37 @@
                                 </li>
                             </ul>
                         </div>
+
+
+
+                        <div class="wrap-form">
+                            <p class="p-form">Підпишіться на розсилку</p>
+
+                            <div class="wrap-flex">
+                                <form class="js-speaker-form">
+
+                                    <div class="wrap-label">
+
+                                        <input type="email" class="input-form" name="email" id="e-mail">
+                                        <label for="e-mail" class="label-form">
+                                            E-mail
+    
+                                        </label>
+                                    </div>
+                                </form>
+
+                                <button type="submit" class="btn-form">
+                                        Підписатися
+                                        <svg class="btn-svg-form" width="24" height="24">
+                             <use href="./image/icons.svg#icon-icon-send">
+
+                             </use>
+                          
+                        </svg>
+                                        </button>
+
+                            </div>
+
                         </div>
             </footer>
 
@@ -452,8 +483,32 @@
                             </use>
                         </svg></button>
 
-                    <p class="modal-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <h1>Залиште свої дані, ми вам передзвонимо</h1>
+
+                    <div class="wrap-modal">
+                        <form>
+                            <label for="name">Ім'я</label>
+                            <input type="text" name="name" id="name">
+
+                            <label for="phone">Телефон</label>
+                            <input type="tel" name="phone_number" id="phone">
+
+                            <label for="e-mail">Пошта</label>
+                            <input type="email" name="email" id="e-mail">
+
+
+                            <label for="e-mail">Коментар</label>
+                            <textarea name="comment" rows="5" placeholder="Введіть текст"></textarea>
+
+                            <label>
+                        <input type="checkbox" name="terms" value="terms" checked />
+                        Погоджуюся з розсилкою та приймаю  <span>Умови договору</span>
+                      </label>
+
+                            <button type="submit">Відправити</button>
+                        </form>
+                    </div>
                 </div>
             </div>
             <script src="./modal.js"></script>
