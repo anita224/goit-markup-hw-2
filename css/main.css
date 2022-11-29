@@ -972,7 +972,7 @@
                                                                 
                                                                 .checkbox:checked+.checkbox-icon-condotions {
                                                                     background-color: var(--color-icon-bg-hover);
-                                                                    border-color: var(--color-icon-bg-hover);
+                                                                    border-color: var(--color-bg-icon);
                                                                 }
                                                                 
                                                                 .subscribe-form-link-conditions {
