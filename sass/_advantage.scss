@@ -1,3 +1,4 @@
+@import"./vars";
 .advantage {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -18,7 +19,7 @@
 }
 
 .wrap-icon {
-    background-color: #f5f4fa;
+    background-color: var(-);
     border-radius: 4px;
     width: 270px;
     height: 120px;
