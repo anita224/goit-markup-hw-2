@@ -118,6 +118,26 @@ footer {
         padding-left: 16px;
         color: #757575;
     }
+    .btn-form {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        background-color: var(--color-icon-bg-hover);
+        border: none;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        padding-left: 28px;
+        cursor: pointer;
+        .btn-svg-form {
+            fill: #fff;
+            margin: 13px 28px 13px 10px;
+        }
+    }
 }
 
 
