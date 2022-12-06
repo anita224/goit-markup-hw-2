@@ -1,12 +1,58 @@
-@import"./vars";
+@import"./temp";
 .advantage {
     padding-top: 94px;
     padding-bottom: 94px;
+    .hide {
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        margin: -1px;
+    }
+    .advantage-list {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+        .advantage-list-li {
+            width: 270px;
+            height: 120px;
+            .wrap-icon {
+                background-color: $color-bg-our-team;
+                border-radius: 4px;
+                width: 270px;
+                height: 120px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .advantage-tittle {
+                font-size: 14px;
+                line-height: 1.1428;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                color: $color-h2;
+                margin-top: 30px;
+            }
+            .advantage-p {
+                font-size: 14px;
+                line-height: 1.7142;
+                letter-spacing: 0.03em;
+                color: $color-description;
+            }
+        }
+    }
 }
 
 .advantage-icon {}
 
-.advantage-list {
+
+/*.advantage-list {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -16,22 +62,23 @@
 .advantage-list-li {
     width: 270px;
     height: 120px;
-}
+
 
 .wrap-icon {
-    background-color: var(-);
+    background-color: $color-bg-our-team;
     border-radius: 4px;
     width: 270px;
     height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+}}*/
 
 
 /*Переваги в css спрячем h2*/
 
-.hide {
+
+/*.hide {
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -42,27 +89,29 @@
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
-}
+}*/
 
 
 /*список преимуществ, 2-ой блок, шапку не считаю*/
 
-.advantage-tittle {
+
+/*.advantage-tittle {
     font-size: 14px;
     line-height: 1.1428;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-h2);
     margin-top: 30px;
-}
+}*/
 
 .advantage-link {
     margin-left: 100px;
 }
 
-.advantage-p {
+
+/*.advantage-p {
     font-size: 14px;
     line-height: 1.7142;
     letter-spacing: 0.03em;
     color: var(--color-description);
-}
+}}*/
