@@ -31,17 +31,17 @@
                 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
                 transition-duration: 250ms;
                 .client-link:hover {
-                    border-color: #2196f3;
+                    border-color: $border-color2;
                 }
                 .client-link:focus {
-                    border-color: #2196f3;
-                    fill: #2196f3;
+                    border-color: $border-color2;
+                    fill: $border-color2;
                     .client-icon-svg {
                         width: 106px;
                         height: 60px;
                         fill: #afb1b8;
                         .client-link:hover .client-icon-svg {
-                            border-color: #2196f3;
+                            border-color: $border-color2;
                             fill: #2196f3;
                         }
                     }
