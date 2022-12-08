@@ -161,8 +161,8 @@
 }
 
 .subscribe-form-text-conditions {
-    height: 24px;
     display: inline-flex;
+    height: 24px;
     align-items: center;
     color: var(--color-description);
 }
@@ -170,6 +170,7 @@
 .checkbox-icon-condotions {
     display: inline-block;
     border-radius: 4px;
+    border: 2px solid black;
     margin-right: 7px;
     opacity: 0;
 }
