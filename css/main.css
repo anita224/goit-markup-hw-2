@@ -305,6 +305,19 @@ a {
   list-style-type: none;
 }
 
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /*Чим ми займаємося*/
 .work {
   padding-bottom: 94px;
