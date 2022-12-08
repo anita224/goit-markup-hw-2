@@ -942,21 +942,14 @@ form {
 }
 
 .subscribe-form-text-conditions {
-  height: 24px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  height: 24px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   color: var(--color-description);
-}
-
-.checkbox {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  position: absolute;
 }
 
 .checkbox-icon-condotions {
@@ -964,6 +957,11 @@ form {
   border-radius: 4px;
   border: 2px solid black;
   margin-right: 7px;
+  opacity: 0;
+}
+
+.checkbox-icon-condotions:focus {
+  opacity: 1;
 }
 
 .checkbox:checked + .checkbox-icon-condotions {
