@@ -1,0 +1,47 @@
+/*главный экран*/
+
+.hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/bg\ hero.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: var(--background-color);
+    max-width: 1600px;
+    height: 600px;
+}
+
+
+/*заголовок главный*/
+
+.hero-tittle {
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3636;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--brand-color2);
+}
+
+
+/*кнопка на гл.экране*/
+
+.btn-hero {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 32px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    color: var(--brand-color2);
+    background: var(--hoover-color);
+    border: none;
+    border-radius: 4px;
+}
+
+.btn-hero a {
+    color: #ffffff;
+}
