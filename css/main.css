@@ -933,6 +933,14 @@ form {
   position: relative;
 }
 
+.checkbox {
+  margin-right: 7px;
+  background-color: #188CE8;
+  width: 16px;
+  height: 15px;
+  margin-bottom: 3px;
+}
+
 .subscribe-form-icon {
   position: absolute;
   top: 50%;
@@ -953,15 +961,9 @@ form {
 }
 
 .checkbox-icon-condotions {
-  display: inline-block;
   border-radius: 4px;
   border: 2px solid black;
   margin-right: 7px;
-  opacity: 0;
-}
-
-.checkbox-icon-condotions:focus {
-  opacity: 1;
 }
 
 .checkbox:checked + .checkbox-icon-condotions {
@@ -978,7 +980,7 @@ form {
 
 .subscrib-button {
   background-color: var(--color-icon-bg-hover);
-  margin-left: 164px;
+  margin-left: 120px;
   height: 50px;
   width: 200px;
   font-weight: 700;
