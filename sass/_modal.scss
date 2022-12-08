@@ -167,16 +167,15 @@
     color: var(--color-description);
 }
 
-.checkbox {
-    appearance: none;
-    position: absolute;
-}
-
 .checkbox-icon-condotions {
     display: inline-block;
     border-radius: 4px;
-    border: 2px solid black;
     margin-right: 7px;
+    opacity: 0;
+}
+
+.checkbox-icon-condotions:focus {
+    opacity: 1;
 }
 
 .checkbox:checked+.checkbox-icon-condotions {
