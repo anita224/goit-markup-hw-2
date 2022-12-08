@@ -935,10 +935,10 @@ form {
 
 .checkbox {
   margin-right: 7px;
-  background-color: #188CE8;
   width: 16px;
   height: 15px;
   margin-bottom: 3px;
+  accent-color: #2196F3;
 }
 
 .subscribe-form-icon {
