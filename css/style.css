@@ -995,7 +995,7 @@ form {
 .checkbox-icon-condotions {
     display: inline-block;
     border-radius: 4px;
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
     margin-right: 7px;
 }
 
