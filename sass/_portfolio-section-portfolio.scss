@@ -119,9 +119,6 @@
     .portfolio-tabs {
         flex-wrap: wrap;
     }
-    .portfolio-li {
-        flex: calc(50% - 30px);
-    }
 }
 @media (max-width: 480px) {
     .portfolio-tabs {
@@ -129,6 +126,6 @@
         justify-content: flex-start;
     }
     .portfolio-li {
-        flex: 100%;
+        flex: 1 1 100%;
     }
 }

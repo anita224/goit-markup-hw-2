@@ -171,6 +171,7 @@ form {
     .footer-container {
         flex-wrap: wrap;
         justify-content: space-between;
+        padding: 0px 76px;
     }
     
     .logo-footer {
@@ -181,10 +182,16 @@ form {
         margin: 0;
         text-align: center;
     }
+    .wrap-flex {
+        flex-direction: column;
+    }
 
     .wrap-form {
         margin: 60px auto 0px auto;
         text-align: center;
+    }
+    .btn-form {
+        justify-content: center;
     }
 }
 
@@ -193,6 +200,7 @@ form {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
+        padding: 0px 0px;
     }
 
     .logo-footer {
