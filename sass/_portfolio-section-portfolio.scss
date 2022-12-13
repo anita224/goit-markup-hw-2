@@ -114,3 +114,21 @@
     padding-left: 24px;
     margin-top: 0;
 }
+
+@media (max-width: 968px) {
+    .portfolio-tabs {
+        flex-wrap: wrap;
+    }
+    .portfolio-li {
+        flex: calc(50% - 30px);
+    }
+}
+@media (max-width: 480px) {
+    .portfolio-tabs {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .portfolio-li {
+        flex: 100%;
+    }
+}

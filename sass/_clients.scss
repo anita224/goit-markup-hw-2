@@ -12,14 +12,15 @@
 
 .clients-ul {
     display: flex;
-    gap: 30px;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .clients-li {
     gap: 16px 32px;
-    width: 170px;
-    height: 92px;
+}
+
+.clients-li:last-child {
+    margin-right: none;
 }
 
 .client-icon-svg {
@@ -57,4 +58,20 @@
     transition: background-color, color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
+}
+
+@media (max-width: 968px) {
+    .clients {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .clients-ul {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+    .clients-li {
+        flex: calc(33% - 120px);
+    }
 }

@@ -5,7 +5,7 @@
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: var(--background-color);
-    max-width: 1600px;
+    max-width: 100%;
     height: 600px;
 }
 
@@ -44,4 +44,25 @@
 
 .btn-hero a {
     color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .hero-tittle {
+        font-size: 26px;
+        line-height: 42px;
+    }
+    .btn-hero {
+        padding: 10px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding-top: 118px;
+        padding-bottom: 118px;
+        max-width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+    }
 }
